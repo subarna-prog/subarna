@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Canteen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>College Canteen</h1>
+        <p>Delicious meals for students</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#menu" class="active">Menu</a></li>
+            <li><a href="#orders">My Orders</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="menu" class="menu-section">
+            <h2>Our Menu</h2>
+            <div class="menu-category">
+                <h3>Breakfast</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="images/breakfast1.jpg" alt="Pancakes">
+                        <h4>Pancakes</h4>
+                        <p class="price">$3.50</p>
+                        <button class="add-to-cart" data-name="Pancakes" data-price="3.50">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/breakfast2.jpg" alt="Omelette">
+                        <h4>Omelette</h4>
+                        <p class="price">$4.00</p>
+                        <button class="add-to-cart" data-name="Omelette" data-price="4.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Lunch</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="images/lunch1.jpg" alt="Burger">
+                        <h4>Burger</h4>
+                        <p class="price">$5.50</p>
+                        <button class="add-to-cart" data-name="Burger" data-price="5.50">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/lunch2.jpg" alt="Pizza">
+                        <h4>Pizza</h4>
+                        <p class="price">$6.00</p>
+                        <button class="add-to-cart" data-name="Pizza" data-price="6.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Drinks</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="images/drink1.jpg" alt="Coffee">
+                        <h4>Coffee</h4>
+                        <p class="price">$2.00</p>
+                        <button class="add-to-cart" data-name="Coffee" data-price="2.00">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/drink2.jpg" alt="Juice">
+                        <h4>Juice</h4>
+                        <p class="price">$2.50</p>
+                        <button class="add-to-cart" data-name="Juice" data-price="2.50">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="orders" class="orders-section">
+            <h2>My Orders</h2>
+            <div class="cart">
+                <h3>Your Cart</h3>
+                <div id="cart-items"></div>
+                <div class="cart-total">
+                    <p>Total: $<span id="cart-total">0.00</span></p>
+                    <button id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 College Canteen. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
